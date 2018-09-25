@@ -3,7 +3,7 @@ package version;
 public class Student {
 		public Student(){}
 		
-		public Student(int id,String name,char sex,String banji) {
+		public Student(int id,String name,String sex,String banji) {
 			this.id=id;
 			this.name=name;
 			this.sex= sex;
@@ -14,7 +14,7 @@ public class Student {
 		
 		private int id;
 		private String name;
-		private char sex;
+		private String sex;
 		private String banji;
 		
 		
@@ -31,13 +31,13 @@ public class Student {
 
 
 
-		public char getSex() {
+		public String getSex() {
 			return sex;
 		}
 
 
 
-		public void setSex(char sex) {
+		public void setSex(String sex) {
 			this.sex = sex;
 		}
 
@@ -61,9 +61,9 @@ public class Student {
 		public void setId(int id) {
 			this.id = id;
 		}
-
-
-
+		public String toString() {
+			return "\t"+id+"\t"+name+"\t"+sex+"\t"+banji;	
+		}
 
 		
 		}
